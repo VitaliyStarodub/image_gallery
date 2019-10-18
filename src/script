@@ -1,0 +1,17 @@
+let thumbs = document.getElementById('thumbs');
+let largeImg = document.getElementById('largeImg');
+
+thumbs.onclick = (event) => {
+    let thumbnail = event.target;
+
+    if (!thumbnail) {
+        return;
+    }
+    event.preventDefault();
+    showThumbnail(thumbnail.href, thumbnail.title);
+};
+
+function showThumbnail(href, title) {
+    largeImg.src = href;
+    largeImg.alt = title;
+}
