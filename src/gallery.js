@@ -1,8 +1,8 @@
-let thumbs = document.getElementById('thumbs');
-let largeImg = document.getElementById('largeImg');
+const thumbs = document.querySelector('.thumbs');
+const largeImg = document.querySelector('.largeImg');
 
 thumbs.onclick = (event) => {
-    let thumbnail = event.target;
+    const thumbnail = event.target;
 
     if (!thumbnail) {
         return;
